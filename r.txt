@@ -17,6 +17,7 @@ proglog==0.1.10
 pycryptodomex==3.21.0
 pydantic==2.10.1
 pydantic_core==2.27.1
+PyGithub==2.5.0
 PySocks==1.7.1
 python-dotenv==1.1.0
 requests==2.32.3
