@@ -2,20 +2,22 @@ name: Upload
 
 on:
   schedule:
-    - cron: "0 3 * * *"  # Runs every day at midnight (UTC)
-  workflow_dispatch:     # Allows manual triggering
+    - cron: "3 7 * * *"
+    - cron: "20 8 * * *"
+    - cron: "41 12 * * *"
+    - cron: "15 14 * * *"
+    - cron: "34 15 * * *"
+    - cron: "49 15 * * *"
+  workflow_dispatch:
 
 env:
-  ACTIONS_ALLOW_UNSECURE_COMMANDS: true  # Required for FFmpeg installation
-  RYNX: ${{ secrets.RYNX}}
-  CYBRIX: ${{ secrets.CYBRIX}}
-  
-
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  RYNX: ${{ secrets.RYNX }}
+  CYBRIX: ${{ secrets.CYBRIX }}
 
 jobs:
   scrape-latest:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -32,10 +34,10 @@ jobs:
         run: pip install -r r.txt
 
       - name: Test env vars for python
-        run: TEST_SECRET=${{ secrets.RYNX}}
+        run: TEST_SECRET=${{ secrets.RYNX }}
 
       - name: Download
         run: python download.py
-        
+
       - name: Process
         run: python post_main.py
