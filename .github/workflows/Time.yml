@@ -1,5 +1,5 @@
 
-name: Renew
+name: Time
 
 on:
   schedule:
