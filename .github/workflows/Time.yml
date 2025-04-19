@@ -41,3 +41,6 @@ jobs:
         
       - name: Process
         run: python time_main.py
+
+      - name: Story
+        run: python story_time.py
