@@ -40,4 +40,4 @@ jobs:
         run: python download.py
 
       - name: Process
-        run: python post_main.py
+        run: python story_main.py
