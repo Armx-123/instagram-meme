@@ -2,12 +2,12 @@ name: Stories
 
 on:
   schedule:
-    - cron: "47 13 * * *"
-    - cron: "46 8 * * *"
-    - cron: "24 17 * * *"
+    - cron: "52 4 * * *"
+    - cron: "27 17 * * *"
+    - cron: "57 0 * * *"
+    - cron: "46 14 * * *"
+    - cron: "8 2 * * *"
     - cron: "34 15 * * *"
-    - cron: "21 17 * * *"
-    - cron: "14 7 * * *"
   workflow_dispatch:
 
 env:
