@@ -2,12 +2,12 @@ name: Upload
 
 on:
   schedule:
-    - cron: "38 5 * * *"
-    - cron: "8 7 * * *"
-    - cron: "11 22 * * *"
-    - cron: "16 21 * * *"
-    - cron: "59 10 * * *"
-    - cron: "20 2 * * *"
+    - cron: "35 11 * * *"
+    - cron: "8 22 * * *"
+    - cron: "33 3 * * *"
+    - cron: "37 9 * * *"
+    - cron: "56 15 * * *"
+    - cron: "45 6 * * *"
   workflow_dispatch:
 
 env:
